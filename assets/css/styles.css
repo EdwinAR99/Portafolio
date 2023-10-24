@@ -14,7 +14,7 @@ html {
 
 #inicio {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url("/assets/img/Background.jpg");
+        url("/Portafolio/assets/img/Background.jpg"); /*Eliminar /Portafolio para correr en local*/
     background-size: cover;
     background-position: center center;
     height: 100vh;
@@ -302,7 +302,7 @@ html {
 /* SECCION HABILIDADES */
 .contenedor-skills {
     background: linear-gradient(#eb5a5acc, rgba(33, 16, 16, 0.8)),
-        url("/assets/img/—Pngtree—2\ 5d\ learn\ know\ how_4117072.jpg");
+        url("/Portafolio/assets/img/—Pngtree—2\ 5d\ learn\ know\ how_4117072.jpg"); /*Eliminar /Portafolio para correr en local*/
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
