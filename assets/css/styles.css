@@ -14,8 +14,8 @@ html {
 
 #inicio {
     /*Antiguo lugar de background*/
-    background-size: cover;
-    background-position: center center;
+    background-size: cover !important;
+    background-position: center center !important;
     height: 100vh;
 }
 
@@ -301,10 +301,10 @@ html {
 /* SECCION HABILIDADES */
 .contenedor-skills {
     /*Antiguo lugar de background*/
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center center !important;
     padding: 100px 0;
     text-align: center;
 }
