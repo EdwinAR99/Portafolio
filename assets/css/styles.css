@@ -72,6 +72,10 @@ html {
     color: #ff4080;
 }
 
+#inicio .contenido header .contenido-header .seleccionado {
+    color: #ff4080;
+}
+
 #inicio .contenido .presentacion {
     max-width: 1100;
     height: 100vh;
@@ -97,7 +101,7 @@ html {
 }
 
 #inicio .contenido .presentacion h2 span {
-    font-size: 25px;
+    font-size: 35px;
     color: #ff4080;
     transition: 0.5s;
 }
@@ -158,6 +162,7 @@ html {
 
 #sobremi .sobremi {
     margin: 0 40px;
+    max-width: 600px;
 }
 
 #sobremi .sobremi .titulo-seccion {
@@ -476,5 +481,172 @@ html {
     100% {
         -webkit-transform: rotate(-5deg);
         transform: rotate(-5deg);
+    }
+}
+
+/* SECCION CONTACTO */
+#contacto {
+    padding: 100px 15px;
+}
+
+#contacto .titulo-seccion {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#contacto .contenedor-form {
+    max-width: 1100px;
+    margin: auto;
+}
+
+#contacto .contenedor-form .fila {
+    margin-bottom: 15px;
+}
+
+#contacto .contenedor-form .mitad {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contacto .contenedor-form input, #contacto .contenedor-form textarea {
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid #919191;
+}
+
+#contacto .contenedor-form .mitad input {
+    width: 48%;
+}
+
+#contacto .contenedor-form .input-full {
+    width: 100%;
+}
+
+#contacto .btn-enviar {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: .5px;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#contacto .btn-enviar:hover {
+    background-color: #ff4080;
+    color: #fff
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 5px;
+    font-size: 26px;
+}
+
+/* SECCION RESPONSIVE */
+@media screen and (max-width:900px) {
+    .redes {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav.responsive {
+        display: block;
+        background-color: rgba(0, 0, 0, .8);
+        width: 100%;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    nav.responsive ul {
+        display: block !important;
+        text-align: center;
+    }
+
+    nav.responsive ul li{
+        margin: 5px;
+    }
+
+    #icono-nav {
+        display: block;
+    }
+
+    #inicio .contenido .presentacion h2 {
+        font-size: 40px;
+    }
+
+    #sobremi {
+       padding: 50px 0;
+       display: block; 
+    }
+
+    #sobremi .contenedor-foto {
+        max-width: 200px;
+        padding: 8px;
+    }
+
+    #sobremi .contenedor-foto img {
+        padding: 8px;
+    }
+
+    #sobremi .sobremi .titulo-seccion {
+        text-align: center;
+    }
+
+    #sobremi .sobremi h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #servicios {
+        padding: 50px 15px;
+    }
+
+    #servicios .fila {
+        display: block;
+        margin: 0 !important;
+    }
+
+    #servicios .fila .servicio {
+        margin: 20px auto;
+    }
+
+    #contenedor-skils {
+        padding: 50px 20px;
+    }
+
+    #contacto {
+        padding: 50px 15px;
+    }
+
+    #contacto .contenedor-form .mitad {
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    #contacto .contenedor-form .mitad input {
+        width: 100%;
+        margin-bottom: 15px;
     }
 }

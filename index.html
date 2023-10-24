@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="/assets/css/styles.css">
     <script src="/assets/js/scripts.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
@@ -20,16 +20,16 @@
                     <a href="#inicio" style="text-decoration: none;"><h1>&lt;/ED&gt;</h1></a>
                     <nav id="nav" class="">
                         <ul id="links">
-                            <li><a href="#inicio" class="select">INICIO</a></li>
-                            <li><a href="#sobremi">SOBRE MI</a></li>
-                            <li><a href="#servicios">SERVICIOS</a></li>
-                            <li><a href="#skills">HABILIDADES</a></li>
-                            <li><a href="#proyectos">PROYECTOS</a></li>
-                            <li><a href="#contacto">CONTACTO</a></li>
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#skills" onclick="seleccionar(this)">HABILIDADES</a></li>
+                            <li><a href="#proyectos" onclick="seleccionar(this)">PROYECTOS</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
                         </ul>
                     </nav>
                     <!--ICONOS-->
-                    <div id="icono-nav">
+                    <div id="icono-nav" onclick="responsiveMenu()">
                         <i class="fa-solid fa-bars"></i>
                     </div>
 
@@ -45,7 +45,7 @@
             <div class="presentacion">
                 <p class="bienvenida">Bienvenidos</p>
                 <h2>Soy <span>Edwin Adrada</span>, Desarrollador Junior</h2>
-                <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi enim sed ad soluta tempora non omnis quia est facilis placeat porro distinctio, impedit ex sequi quas sunt, debitis atque nostrum!</p>
+                <p class="descripcion">"Soy estudiante de ingeniería de sistemas. Me apasiona el desarrollo de software, en especial el desarrollo web e inteligencia artificial, aunque actualmente me especializo en desarrollo de backend. Además, tengo habilidades en frontend y bases de datos relacionales."</p>
                 <a href="#sobremi">Ver más</a>
             </div>
         </div>
@@ -59,9 +59,9 @@
         <div class="sobremi">
             <p class="titulo-seccion">Sobre Mí</p>
             <h2>Hola, soy <span>Edwin Adrada Ruiz</span></h2>
-            <h3>Desarrollador</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nihil voluptates consectetur facere beatae perferendis sunt tenetur eius veritatis sequi esse illum vel ex, voluptas commodi sit iste aspernatur culpa?</p>
-            <a href="#">Desscargar CV</a>
+            <h3>Desarrollador de software</h3>
+            <p>"Soy un desarrollador colombiano. Desde siempre me ha fascinado el mundo del software, la tecnología y cómo se realizan las cosas. Desde que inicié mi pregrado en la Universidad del Cauca, he descubierto y adquirido un amplio conocimiento sobre el desarrollo de software, incluyendo la programación estructural, la programación orientada a objetos (POO), la inteligencia artificial (IA), las bases de datos (BD), el aseguramiento de calidad (QA), así como el uso de lenguajes como Java, C, C++, C# y Python. Aunque todavía soy un desarrollador en proceso de aprendizaje en el ámbito profesional, he completado numerosos proyectos durante mi pregrado y estoy seguro de mi capacidad para aprender nuevas tecnologías y aplicarlas de manera efectiva. Mi actitud y responsabilidad me permiten enfrentar con éxito nuevos desafíos y continuar mi crecimiento profesional."</p>
+            <a href="#">Descargar CV</a>
         </div>
     </section>
 
@@ -74,10 +74,10 @@
                 <h4>Diseño de Frontend</h4>
                 <hr>
                 <ul class="servicios-tag">
+                    <li>HTML/CSS/JS</li>
                     <li>Angular</li>
-                    <li>HTML/CSS</li>
                 </ul>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime ad, magnam ratione similique inventore corrupti ab expedita quae. Deleniti error tempora nulla necessitatibus itaque ex voluptate dolor consequuntur architecto eligendi!</p>
+                <p>"Aunque el diseño no es mi especialidad, tengo conocimientos para desarrollar un frontend en Angular, así como la capacidad de implementar diseños o ideas con HTML, CSS y JavaScript, además de crear páginas responsivas."</p>
             </div>
             <div class="servicio">
                 <span class="icono"><i class="fa-solid fa-code"></i></span>
@@ -85,10 +85,9 @@
                 <hr>
                 <ul class="servicios-tag">
                     <li>Springboot</li>
-                    <li>Django</li>
-                    <li>PHP</li>
+                    <li>NodeJs</li>
                 </ul>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime ad, magnam ratione similique inventore corrupti ab expedita quae. Deleniti error tempora nulla necessitatibus itaque ex voluptate dolor consequuntur architecto eligendi!</p>
+                <p>"Me considero un desarrollador backend muy competente. La mayor parte de mi aprendizaje lo realicé utilizando Java para la creación de mis proyectos, además de la implementación de Spring Boot en la mayoría de mis proyectos de desarrollo web. Poseo habilidades para crear e implementar API RESTful con JSON y establecer conexiones con bases de datos relacionales."</p>
             </div>
             <div class="servicio">
                 <span class="icono"><i class="fa-solid fa-code"></i></span>
@@ -97,11 +96,9 @@
                 <ul class="servicios-tag">
                     <li>Java</li>
                     <li>Python</li>
-                    <li>C</li>
-                    <li>C++</li>
-                    <li>C#</li>
+                    <li>C y C++</li>
                 </ul>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime ad, magnam ratione similique inventore corrupti ab expedita quae. Deleniti error tempora nulla necessitatibus itaque ex voluptate dolor consequuntur architecto eligendi!</p>
+                <p>"El desarrollo de software en Java, C, C++ y Python es un campo en el que puedo destacar. Como desarrollador, tengo experiencia en el uso de estos lenguajes de programación. En particular, en Java, he trabajado en numerosos proyectos utilizando esta tecnología para crear aplicaciones. En C y C++, he trabajado en aplicaciones de bajo nivel, aprovechando la eficiencia y el control que ofrecen estos lenguajes. Python, por su parte, es un lenguaje que he utilizado tanto en el desarrollo de aplicaciones web como en proyectos de análisis de datos con DEAP y deteccion de objetos con YoLO."</p>
             </div>
         </div>
         <div class="fila">
@@ -112,9 +109,8 @@
                 <ul class="servicios-tag">
                     <li>MySql</li>
                     <li>Oracle</li>
-                    <li>PL/SQL</li>
                 </ul>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime ad, magnam ratione similique inventore corrupti ab expedita quae. Deleniti error tempora nulla necessitatibus itaque ex voluptate dolor consequuntur architecto eligendi!</p>
+                <p>"El desarrollo de software con Oracle y MySQL son dos sistemas de gestión de bases de datos que he usado, en el caso de MySQL, he desarrollado aplicaciones que utilizan esta base de datos, aprovechando su escalabilidad y facilidad de uso. He creado esquemas de bases de datos eficientes y he implementado soluciones de almacenamiento y recuperación de datos."</p>
             </div>
         </div>
     </section>
@@ -122,6 +118,15 @@
     <!--SECCION HABILIDADES-->
     <section class="contenedor-skills" id="skills">
         <h3>HABILIDADES</h3>
+        <div class="skill">
+            <div class="info">
+                <p><i class="fa-brands fa-html5 icono"></i><i class="fa-brands fa-css3-alt icono"></i><i class="fa-brands fa-square-js icono"></i>HTML, CSS & JS</p>
+                <span class="procentaje">60%</span>
+            </div>
+            <div class="barra">
+                <div id="html" class="barra-progreso"style="--w:60%; --c:rgb(251,101,26);"></div>
+            </div>
+        </div>
         <div class="skill">
             <div class="info">
                 <p><i class="fa-brands fa-angular icono"></i>Angular</p>
@@ -133,47 +138,29 @@
         </div>
         <div class="skill">
             <div class="info">
-                <p><i class="fa-brands fa-html5 icono"></i><i class="fa-brands fa-css3-alt icono"></i>HTML & CSS</p>
-                <span class="procentaje">80%</span>
-            </div>
-            <div class="barra">
-                <div id="html" class="barra-progreso"style="--w:80%; --c:rgb(251,101,26);"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="info">
                 <p><i class="fa-solid fa-leaf icono"></i>Springboot</p>
-                <span class="procentaje">70%</span>
+                <span class="procentaje">55%</span>
             </div>
             <div class="barra">
-                <div id="spring" class="barra-progreso" style="--w:70%; --c:rgb(109,180,63);"></div>
+                <div id="spring" class="barra-progreso" style="--w:50%; --c:rgb(108,181,45);"></div>
             </div>
         </div>
         <div class="skill">
             <div class="info">
-                <p><i class="fa-solid fa-d icono"></i>Django</p>
-                <span class="procentaje">50%</span>
+                <p><i class="fa-brands fa-node-js icono"></i>Node.js</p>
+                <span class="procentaje">40%</span>
             </div>
             <div class="barra">
-                <div id="django" class="barra-progreso" style="--w:50%; --c:rgb(15,62,49);"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="info">
-                <p><i class="fa-brands fa-php icono"></i>PHP</p>
-                <span class="procentaje">30%</span>
-            </div>
-            <div class="barra">
-                <div id="php" class="barra-progreso" style="--w:30%; --c:rgb(97,122,191);"></div>
+                <div id="spring" class="barra-progreso" style="--w:40%; --c:rgb(2,110,0);"></div>
             </div>
         </div>
         <div class="skill">
             <div class="info">
                 <p><i class="fa-brands fa-java icono"></i>Java</p>
-                <span class="procentaje">90%</span>
+                <span class="procentaje">70%</span>
             </div>
             <div class="barra">
-                <div id="java" class="barra-progreso" style="--w:90%; --c:rgb(240,106,30);"></div>
+                <div id="java" class="barra-progreso" style="--w:70%; --c:rgb(240,106,30);"></div>
             </div>
         </div>
         <div class="skill">
@@ -205,38 +192,20 @@
         </div>
         <div class="skill">
             <div class="info">
-                <p><i class="fa-sharp fa-solid fa-c" style="color: #fff;"></i><i class="fa-sharp fa-solid fa-hashtag icono"></i>C#</p>
-                <span class="procentaje">75%</span>
-            </div>
-            <div class="barra">
-                <div id="Cshare" class="barra-progreso" style="--w:75%; --c:rgb(104,47,132);"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="info">
                 <p><i class="fa-solid fa-m icono"></i>MySql</p>
-                <span class="procentaje">85%</span>
+                <span class="procentaje">55%</span>
             </div>
             <div class="barra">
-                <div id="mysql" class="barra-progreso" style="--w:85%; --c:rgb(16,85,121);"></div>
+                <div id="mysql" class="barra-progreso" style="--w:55%; --c:rgb(16,85,121);"></div>
             </div>
         </div>
         <div class="skill">
             <div class="info">
                 <p><i class="fa-solid fa-o icono"></i>Oracle</p>
-                <span class="procentaje">70%</span>
+                <span class="procentaje">50%</span>
             </div>
             <div class="barra">
-                <div id="oracle" class="barra-progreso" style="--w:70%; --c:rgb(235,27,33);"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="info">
-                <p><i class="fa-solid fa-code icono"></i>PL/SQL</p>
-                <span class="procentaje">40%</span>
-            </div>
-            <div class="barra">
-                <div id="plsql" class="barra-progreso" style="--w:40%; --c:rgb(252,5,7);"></div>
+                <div id="oracle" class="barra-progreso" style="--w:50%; --c:rgb(235,27,33);"></div>
             </div>
         </div>
     </section>
@@ -265,6 +234,40 @@
             </div>
         </div>
     </section>
+
+    <!--SECCION CONTACTO-->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactame ahora</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input-mitad">
+                    <input type="text" placeholder="Direccion de Email"
+                    class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
+                </div>
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <!--SECCION FOOTER-->
+    <footer>
+        <p>Todos los derechos reservados - 2023</p>
+        <div class="redes">
+            <a href="https://www.facebook.com/edwin.adradaruiz/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://github.com/NiallerSunLight"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/edwin-adrada-ruiz-a47307247/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/itami_no_kami/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="assets/js/scripts.js"></script>
 </body>
 
 </html>
