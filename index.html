@@ -200,16 +200,20 @@
         <div class="contenedor-form">
             <form action="https://formsubmit.co/e87cc0bf0950ad0d442ac16a5677f198" method="POST">
                 <div class="fila mitad">
-                    <input type="text" placeholder="Nombre Completo" name="name" class="input-mitad">
-                    <input type="email" placeholder="Direccion de Email" name="email" class="input-mitad">
+                    <input type="text" placeholder="Nombre Completo" name="name" class="input-mitad" required>
+                    <input type="email" placeholder="Direccion de Email" name="email" class="input-mitad" required>
                 </div>
                 <div class="fila">
-                    <input type="text" placeholder="Asunto..." name="subject" class="input-full">
+                    <input type="text" placeholder="Asunto..." name="subject" class="input-full" required>
                 </div>
                 <div class="fila">
-                    <textarea name="" id="" cols="30" rows="10" name="mensaje" placeholder="Tu Mensaje..." class="input-full"></textarea>
+                    <textarea name="" id="" cols="30" rows="10" name="message" placeholder="Tu Mensaje..." class="input-full" required></textarea>
                 </div>
                 <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="https://edwinar99.github.io/Portafolio/">
+                <input type="hidden" name="_captcha" value="false"> 
             </form>
         </div>
     </section>

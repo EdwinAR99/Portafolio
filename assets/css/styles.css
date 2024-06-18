@@ -491,6 +491,21 @@ html {
     width: 100%;
 }
 
+
+input[type="text"],
+input[type="email"],
+textarea,
+fieldset {
+    width: 100%;
+    border: 1px solid #333;
+    box-sizing: border-box;
+}
+
+  
+input:focus:invalid {
+    box-shadow: none;
+}
+
 #contacto .btn-enviar {
     display: block;
     margin: auto;
