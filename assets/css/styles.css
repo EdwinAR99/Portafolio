@@ -219,13 +219,15 @@ html {
 #servicios {
     padding: 100px 15px;
     text-align: center;
-    background-color: #f3f3f3;
+    /*background-color: #f3f3f3;*/
+    background: rgb(49, 95, 99);
+    background: radial-gradient(circle,rgba(49, 95, 99, 1) 0%,rgba(0, 18, 25, 1) 100%);
 }
 
 #servicios .titulo-seccion {
     font-size: 22px;
     text-transform: uppercase;
-    color: #111135;
+    color: #c6c6df;
     text-decoration: underline;
     text-decoration-color: #d3d3d3;
     text-decoration-thickness: 5px;
@@ -233,7 +235,7 @@ html {
 
 #servicios .fila {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     max-width: 1100px;
     margin: 30px auto;
 }
