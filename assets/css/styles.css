@@ -312,6 +312,17 @@ html {
     text-align: center;
 }
 
+#skills .titulo-seccion {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #111135;
+    text-decoration-thickness: 5px;
+}
+
 .contenedor-skills .skill img{
     padding: 1.12rem;
 }
@@ -321,9 +332,25 @@ html {
     height: 12rem;
 }
 
+.contenedor-skills .skill .icon:hover {
+    width: 17rem;
+    height: 17rem;
+}
+
 .contenedor-skills .skill .icon-card {
     background-color: #fff;
     border-radius: 11px;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+    padding: 20px;
+    margin: 10px;
+    transition: 0.3s ease-out;
+}
+
+.contenedor-skills .skill .icon-card:hover {
+    transition: 0.3s ease-in;
+    background-color: #fff;
+    border-radius: 25%;
+    border-color: #ff4080;
     box-shadow: 0 3px 10px var(--secondary-shadow);
     padding: 20px;
     margin: 10px;
@@ -458,7 +485,7 @@ html {
     text-transform: uppercase;
     color: #111135;
     text-decoration: underline;
-    text-decoration-color: #d3d3d3;
+    text-decoration-color: #111135;
     text-decoration-thickness: 5px;
 }
 
@@ -609,7 +636,7 @@ footer a {
         margin: 20px auto;
     }
 
-    #contenedor-skils {
+    #contenedor-skills {
         padding: 50px 20px;
     }
 
