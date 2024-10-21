@@ -332,11 +332,6 @@ html {
     height: 12rem;
 }
 
-.contenedor-skills .skill .icon:hover {
-    width: 17rem;
-    height: 17rem;
-}
-
 .contenedor-skills .skill .icon-card {
     background-color: #fff;
     border-radius: 11px;
@@ -344,16 +339,6 @@ html {
     padding: 20px;
     margin: 10px;
     transition: 0.3s ease-out;
-}
-
-.contenedor-skills .skill .icon-card:hover {
-    transition: 0.3s ease-in;
-    background-color: #fff;
-    border-radius: 25%;
-    border-color: #ff4080;
-    box-shadow: 0 3px 10px var(--secondary-shadow);
-    padding: 20px;
-    margin: 10px;
 }
 
 /* SECCION PROYECTOS */
