@@ -51,7 +51,7 @@ html {
     text-decoration: none;
     color: #fff;
     margin: 0 12px;
-    font-weight: 400;
+    font-weight: 100;
     transition: 0.5s;
 }
 
@@ -94,23 +94,23 @@ html {
 }
 
 #inicio .contenido .presentacion h2 {
-    font-size: 55px;
+    font-size: 50px;
     margin-bottom: 25px;
     text-align: center;
 }
 
 #inicio .contenido .presentacion h2 span {
-    font-size: 35px;
+    font-size: 40px;
     color: #ff4080;
     transition: 0.5s;
 }
 
 #inicio .contenido .presentacion h2 span:hover {
-    font-size: 55px;
+    font-size: 50px;
 }
 
 #inicio .contenido .presentacion .descripcion {
-    max-width: 700px;
+    max-width: 900px;
     margin: 25px auto;
     font-size: 18px;
     text-align: center;
@@ -221,7 +221,7 @@ html {
     text-align: center;
     /*background-color: #f3f3f3;*/
     background: rgb(49, 95, 99);
-    background: radial-gradient(circle,rgba(49, 95, 99, 1) 0%,rgba(0, 18, 25, 1) 100%);
+    background: radial-gradient(circle, rgba(49, 95, 99, 1) 0%, rgba(0, 18, 25, 1) 100%);
 }
 
 #servicios .titulo-seccion {
@@ -302,7 +302,7 @@ html {
 
 /* SECCION HABILIDADES */
 .contenedor-skills {
-    background: linear-gradient(#eb5a5acc, rgba(33, 16, 16, 0.8)), 
+    background: linear-gradient(#eb5a5acc, rgba(33, 16, 16, 0.8)),
         url('../img/—Pngtree—2\ 5d\ learn\ know\ how_4117072.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -323,7 +323,7 @@ html {
     text-decoration-thickness: 5px;
 }
 
-.contenedor-skills .skill img{
+.contenedor-skills .skill img {
     padding: 1.12rem;
 }
 
@@ -344,7 +344,7 @@ html {
 /* SECCION PROYECTOS */
 #proyectos {
     background: rgb(49, 95, 99);
-    background: radial-gradient(circle,rgba(49, 95, 99, 1) 0%,rgba(0, 18, 25, 1) 100%);
+    background: radial-gradient(circle, rgba(49, 95, 99, 1) 0%, rgba(0, 18, 25, 1) 100%);
     margin-bottom: 12px;
     padding: 100px 0;
 }
@@ -406,7 +406,7 @@ html {
     transition: 0.5s;
 }
 
-#proyectos .conten .conten-desc .conten-button:hover{
+#proyectos .conten .conten-desc .conten-button:hover {
     background-color: #ff4080;
 }
 
@@ -488,7 +488,8 @@ html {
     justify-content: space-between;
 }
 
-#contacto .contenedor-form input, #contacto .contenedor-form textarea {
+#contacto .contenedor-form input,
+#contacto .contenedor-form textarea {
     padding: 20px;
     border-radius: 20px;
     border: none;
@@ -513,7 +514,7 @@ fieldset {
     box-sizing: border-box;
 }
 
-  
+
 input:focus:invalid {
     box-shadow: none;
 }
@@ -573,7 +574,7 @@ footer a {
         text-align: center;
     }
 
-    nav.responsive ul li{
+    nav.responsive ul li {
         margin: 5px;
     }
 
@@ -586,8 +587,8 @@ footer a {
     }
 
     #sobremi {
-       padding: 50px 0;
-       display: block; 
+        padding: 50px 0;
+        display: block;
     }
 
     #sobremi .contenedor-foto {
