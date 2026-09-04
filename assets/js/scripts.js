@@ -74,3 +74,16 @@ document.addEventListener("DOMContentLoaded", function () {
   // Llama a la función una vez al cargar la página para determinar la sección inicial
   detectVisibleSection();
 });
+
+// Función para timeline
+function seleccionar(link) {
+  var opciones = document.querySelectorAll("#links a");
+  opciones.forEach(function(opcion) {
+    opcion.className = "";
+  });
+  link.className = "seleccionado";
+
+  // Oculta menú responsive al hacer clic
+  var x = document.getElementById("nav");
+  x.className = "";
+}
